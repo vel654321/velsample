@@ -5,16 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoSharingApplication1", "PhotoSharingApplication1\PhotoSharingApplication1.csproj", "{E4ED8771-ABBC-410B-84DF-0DCA4B2CADC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoSharingApplication1.Tests", "PhotoSharingApplication1.Tests\PhotoSharingApplication1.Tests.csproj", "{AE81A00B-8B0B-45A5-B467-2D9523D5B8E0}"
-EndProject
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "LocationChecker", "LocationChecker\LocationChecker.ccproj", "{CD99FA12-BAEA-47A0-959E-D1157537F4CB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceWebRole1", "WCFServiceWebRole1\WCFServiceWebRole1.csproj", "{3860C97A-8900-4E1E-A85F-F4D013DB77AC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationCheckerWebRole", "LocationCheckerWebRole\LocationCheckerWebRole.csproj", "{DF2803B9-3217-491D-A42A-A8B31CB0256C}"
-EndProject
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "PhotoSharingApplication1.Azure", "PhotoSharingApplication1.Azure\PhotoSharingApplication1.Azure.ccproj", "{D1E17182-38E3-44E1-AEFB-5D7CFC424E4B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,26 +15,6 @@ Global
 		{E4ED8771-ABBC-410B-84DF-0DCA4B2CADC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4ED8771-ABBC-410B-84DF-0DCA4B2CADC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4ED8771-ABBC-410B-84DF-0DCA4B2CADC9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE81A00B-8B0B-45A5-B467-2D9523D5B8E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE81A00B-8B0B-45A5-B467-2D9523D5B8E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE81A00B-8B0B-45A5-B467-2D9523D5B8E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE81A00B-8B0B-45A5-B467-2D9523D5B8E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CD99FA12-BAEA-47A0-959E-D1157537F4CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD99FA12-BAEA-47A0-959E-D1157537F4CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD99FA12-BAEA-47A0-959E-D1157537F4CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD99FA12-BAEA-47A0-959E-D1157537F4CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3860C97A-8900-4E1E-A85F-F4D013DB77AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3860C97A-8900-4E1E-A85F-F4D013DB77AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3860C97A-8900-4E1E-A85F-F4D013DB77AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3860C97A-8900-4E1E-A85F-F4D013DB77AC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DF2803B9-3217-491D-A42A-A8B31CB0256C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF2803B9-3217-491D-A42A-A8B31CB0256C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF2803B9-3217-491D-A42A-A8B31CB0256C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF2803B9-3217-491D-A42A-A8B31CB0256C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D1E17182-38E3-44E1-AEFB-5D7CFC424E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1E17182-38E3-44E1-AEFB-5D7CFC424E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1E17182-38E3-44E1-AEFB-5D7CFC424E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1E17182-38E3-44E1-AEFB-5D7CFC424E4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
