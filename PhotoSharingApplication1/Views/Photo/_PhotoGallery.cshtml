@@ -1,0 +1,28 @@
+﻿@model IEnumerable<PhotoSharingApplication1.Models.Photo>
+           @foreach (var item in Model)
+           {
+            <div class="photo-index-card">
+                <h3>"@item.Title"</h3>
+                @if(item.PhotoFile != null)
+                {
+
+                <img class="photo-index-card-img" width="200" src="@Url.Action("GetImage", "Photo", new {id= item.photoId})" />
+
+
+                }
+                <div class="photo-metadata">
+                    <span class="display-label">Created By:</span>
+                    <span class="display-field">
+                        @Html.DisplayFor(model => item.UserName)</span><br/>
+
+                    <span class="display-label">Created On:</span> <span class="display-field">@Html.DisplayFor(model => item.CreatedDate)</span>
+                </div>
+                @Html.ActionLink("Display", "Display", new { id = item.photoId })
+            </div>
+           }
+
+
+
+@*@model PhotoSharingApplication1.Models.Photo*@
+
+

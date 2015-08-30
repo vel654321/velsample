@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <mvcSiteMapNode  title="Home" controller="Hme" action="Index">
+   <mvcSiteMapNode  title="All Photos" controller="Photo" action="Index" key="AllPhotos" StaticDisplayLevels="2"  />
+    <mvcSiteMapNode  title="Display" visibility="SiteMapPathHelper,!*" controller="Photo" action="Display" StaticDisplayLevels="2"  /><!--dynamicNodeProvider="PhotoSharingApplication1.Models.PhotoDynamicNodeProvider, PhotoSharingApplication1"-->
+    <mvcSiteMapNode  title="SlideShow" visibility="*" controller="Photo" action="SlideShow" StaticDisplayLevels="2" />
+    <mvcSiteMapNode title="Favorites" visibility="SiteMapPathHelper,!*" contoller="Photo" action ="FavoritesSlideShow" StaticDisplayLevels="2"/>
+    <mvcSiteMapNode  title="Add a Photo" visibility="*" controller="Photo" action="Create" StaticDisplayLevels="2"/>
+   
+  </mvcSiteMapNode>
+  
+</mvcSiteMap>

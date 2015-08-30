@@ -1,0 +1,103 @@
+﻿@model PhotoSharingApplication1.Models.Photo
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "Photo", FormMethod.Post, new  { enctype= "multipart/form-data"}))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <p>@Html.LabelFor(model => Model.Title):
+       @Html.EditorFor(model => Model.Title)
+       @Html.ValidationMessageFor(Model=>Model.Title)</p>
+
+    <p>
+        @Html.LabelFor(model => Model.PhotoFile):
+        <input type="file" name="Image"/>
+</p>
+
+
+    <p>
+        @Html.LabelFor(model => Model.Description):
+    @Html.EditorFor(model => Model.Description)
+    @Html.ValidationMessageFor(Model => Model.Description)
+</p>
+
+    <p>
+        @Html.LabelFor(model => Model.UserName):
+    @Html.DisplayFor(model => Model.UserName)
+   
+</p>
+
+    <p>
+        @Html.LabelFor(model => Model.CreatedDate):
+    @Html.DisplayFor(model => Model.CreatedDate)
+    
+</p>
+    <p><input type ="submit" value="Create" />@Html.ActionLink("Back to List", "Index")</p>
+
+}
+
+@*@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Photo</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Title)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Title)
+            @Html.ValidationMessageFor(model => model.Title)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ImageMimeType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ImageMimeType)
+            @Html.ValidationMessageFor(model => model.ImageMimeType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Description)
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreatedDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreatedDate)
+            @Html.ValidationMessageFor(model => model.CreatedDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UserName)
+            @Html.ValidationMessageFor(model => model.UserName)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}*@
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@
